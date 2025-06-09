@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+
+//This file shows how to simply add one group
+//checkout "crafting_item_catalog_2" for full .json example
+
+
+//                CONSTRUCTION CATEGORY IN Example
+//-------------------------------------------------------------
+      {
+        "category_name": "construction", //"items" "equipment" "nature" are also valid responses here
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "shark:sharkblock", //block identifer that you want to use for a group picture
+              "name": "Shark: Shark Blocks" //name that appears in the creative menu must be namespace:identifier format 
+            },
+            "items": [ //list items here
+              "shark:sharkblock",
+              "shark:sharklightblock"
+
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

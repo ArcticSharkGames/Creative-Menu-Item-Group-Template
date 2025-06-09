@@ -1,0 +1,117 @@
+{  
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+
+//NOTES From ArcticShark
+//Hello This is an example of the file formt. Make sure to replace or remove any usused items groups!
+//This File Shows All Four Category Types and how to strcture a larger pack 
+//The other file "craftingitem_catalog" is an example of just one item category feel free to rename this one and edit it
+
+
+
+//                CONSTRUCTION CATEGORY
+//-------------------------------------------------------------
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "namespace:display_block_name", //block identifer that you want to use for a group picture
+              "name": "Shark:My Group Name" //name that appears in the creative menu must be "namespace:identifier" format
+            },
+            "items": [                       //list items here
+              "namespace:item#1",
+              "namespace:item#2"
+            ]
+          },
+          {
+            // OPTIONAL This adds items without being part of a
+            // group as loose items
+            "items": [
+               "mynamespace:my_loose_item"
+            ]
+         }
+        ]
+      },
+
+      //                    Equipment CATEGORY
+//------------------------------------------------------------------------------
+{
+  "category_name": "equipment",
+  "groups": [
+    {
+      "group_identifier": {
+        "icon": "namespace:display_block_name", //block identifer that you want to use for a group picture
+        "name": "Shark:My Group Name" //name that appears in the creative menu must be "namespace:identifier" format
+      },
+      "items": [                       //list items here
+        "namespace:item#1",
+        "namespace:item#2"
+      ]
+    },
+    {
+      // OPTIONAL This adds items without being part of a
+      // group as loose items
+      "items": [
+         "mynamespace:my_loose_item"
+      ]
+   }
+  ]
+},
+
+
+//                    ITEMS CATEGORY
+//------------------------------------------------------------------------------
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "namespace:display_block_name", //block identifer that you want to use for a group picture
+              "name": "Shark:My Group Name" //name that appears in the creative menu must be "namespace:identifier" format
+            },
+            "items": [                       //list items here
+              "namespace:item#1",
+              "namespace:item#2"
+            ]
+          },
+          {
+            // OPTIONAL This adds items without being part of a
+            // group as loose items
+            "items": [
+               "mynamespace:my_loose_item"
+            ]
+         }
+        ]
+      },
+
+//               NATURE CATEGORY
+//-------------------------------------------------------------------
+      {
+        "category_name": "nature",
+        "groups": [ //list multiple groups in one category as such 
+          {
+            "group_identifier": { //group #1
+              "icon": "namespace:display_item1", 
+              "name": "Shark:Nature1"
+            },
+            "items": [
+              "arctic:indigo_froglight"
+            ]
+          },
+          {
+            "group_identifier": { //group #2
+              "icon": "namespace:display_item_2",
+              "name": "Shark:Nature2"
+            },
+            "items": [
+              "arctic:carved_pumpkin_block_0" 
+            ]
+          }
+
+        ]
+      }
+    ]
+  }
+}
